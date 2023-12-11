@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  width: 80vw;
+  height: 80vh;
+  /* border: solid;
+  border-color: red; */
+  align-self: center;
+  /* padding: 14vh 5vh;
+  left: 2.5vw; */
+  border-radius: 40px;
+  grid-template-areas: "title title title title" "image image content content";
+  grid-template-rows: 1fr 2fr;
+}
+
+.title {
+  background-color: rgba(43, 40, 43, 1);
+  grid-area: title;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  background-image: url(kafejka.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: image;
+  border-bottom-left-radius: 40px;
+  min-width: 100%;
+}
+
+.content {
+  background-color: lightgrey;
+  grid-area: content;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+.content p {
+  width: 70%;
+  position: relative;
+  left: 10%;
+}
+
+.title p {
+  color: white;
+  font-size: 4rem;
+  margin: 0.1rem;
+  font-weight: 800;
+  font-family: "Montserrat";
+}
